@@ -1,0 +1,42 @@
+title = "Jen Bradham"
+baseurl = "/"
+copyright = "&copy; 2019 Jennifer Leigh Bradham"
+theme = "hugo-academic"
+
+#googleAnalytics = ""
+#disqusShortname = ""
+
+defaultContentLanguage = "en"
+hasCJKLanguage = false
+defaultContentLanguageInSubdir = false
+removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
+
+paginate = 10  # Number of items per page in paginated lists.
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ]
+  section = [ "HTML", "RSS" ]
+
+
+[blackfriday]
+  hrefTargetBlank = true 
+
+
+[imaging]
+  resampleFilter = "lanczos"
+  quality = 90
+  anchor = "smart"  # Anchor for cropping. Options include Smart and Center.
+
+
+[params]
+name = "Jennifer Bradham"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+  author = "Jennifer Bradham"
+
