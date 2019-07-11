@@ -182,7 +182,7 @@ While looking at other people's configuration files on GitHub, you may come acro
 
 
 
-That is referencing a Hugo shortcode. [Here](https://gohugo.io/content-management/shortcodes/) is a great tutorial on using and creating shortcodes.
+That is referencing a Hugo shortcode. [Here](https://gohugo.io/content-management/shortcodes/) is a great tutorial on using shortcodes and [here](https://zealous-sammet-9b702c.netlify.com/post/tips_websitecreation/) is one on writing your own shortcodes.
 
 * One thing to note is that shortcodes are written in html. You can't create an html document with the `New Post` function in Blogdown (at least I haven't figured it out). Instead just use a text editor (e.g. notepad on Windows) and save it as html in the `shortcodes` folder that you will create within the `layouts` folder.
 
@@ -192,14 +192,25 @@ That is referencing a Hugo shortcode. [Here](https://gohugo.io/content-managemen
 
 
 ### Additional helpful links
+<sub> *I'm basically using this section so I can easily get back to links I often need* </sub>
 
-* Here is a helpful link on [getting started with Hugo in general](https://gohugo.io/getting-started/)
+*Here is a helpful link on [getting started with Hugo in general](https://gohugo.io/getting-started/)
 
 *[Updating you version of Hugo for blogdown on Netlify](https://maraaverick.rbind.io/2017/10/updating-blogdown-hugo-version-netlify/)
   
 *[Markdown Cheatsheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
 
+*[Git ignores directories with no contents](https://stackoverflow.com/questions/3030230/does-git-ignore-empty-folders) so don't panic if it shows up gray in your git repository
 
+*[One more tutorial that might be helpful](https://notes.peter-baumgartner.net/slide/)
+
+*[Inserting an image into your post](https://discourse.gohugo.io/t/solved-how-to-insert-image-in-my-post/1473)
+
+*[My layouts folder disappeared](https://stackoverflow.com/questions/51253614/home-layout-missing-in-layouts-folder-but-works)
+
+*[Relative links](https://github.blog/2013-01-31-relative-links-in-markup-files/)
+
+*[Markdown extended syntax](https://www.markdownguide.org/extended-syntax/)
 
 
 
