@@ -24,14 +24,19 @@
   weight = 4
 
 [[main]]
+name = "Posts/Resources"
+url = "/#posts"
+weight = 5
+
+[[main]]
   name = "Gallery"
   url = "#gallery"
-  weight = 5
+  weight = 6
   
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 7
 
 
 # Link to a PDF of your resume/CV from the menu.
