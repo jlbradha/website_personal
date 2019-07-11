@@ -10,8 +10,8 @@ gallery_item:
   caption: AllisonHill
   image: AllisonHill.png
 - album: gallery
-  caption: Ocean
-  image: theme-ocean.png
+  caption: shortcode
+  image: shortcode.png
 - album: gallery
   caption: Forest
   image: theme-forest.png
@@ -76,7 +76,6 @@ C:\Users\username\AppData\Local\RStudio-Desktop
 
 Next, start with [Alison's](https://alison.rbind.io/) very well-written [tutorial: "Up & Running with Blogdown"](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/) on creating a website.
 
-{{< gallery >}}
 
 
 **Additional helpful info as you work through Alison's tutorial:**
@@ -160,8 +159,12 @@ To push things individually, you can check the box under `staged` in the Git win
 
 4. Select the repository of choice and click `deploy site`
 
-5. If you get an error, it's probably because of your Hugo version. [Here is the workaround](https://maraaverick.rbind.io/2017/10/updating-blogdown-hugo-version-netlify/)
- * *Important to note* is that in order to edit variables in Netlify now, things are a bit different than when [Mara](https://maraaverick.rbind.io/) wrote that tutorial. Now, go to into Netlify and do the following:
+5. If you get an error, it's probably because of your Hugo version. 
+
+* First, [figure out what version of Hugo you have] (https://maraaverick.rbind.io/2017/10/updating-blogdown-hugo-version-netlify/)
+
+* Then, read [this workaround](https://maraaverick.rbind.io/2017/10/updating-blogdown-hugo-version-netlify/)
+ * *Important to note* is that in order to edit variables in Netlify now, things are a bit different than when [Mara](https://maraaverick.rbind.io/) wrote that tutorial. Now, within Netlify, go to:
  
  ```
  Build and Deploy --> Environment --> Edit variables
@@ -174,76 +177,29 @@ To push things individually, you can check the box under `staged` in the Git win
 
 While looking at other people's configuration files on GitHub, you may come across something that looks like this:
 
-> {{% Syllabus %}}
 
-That is refereing a Hugo shortcode. [Here](https://gohugo.io/content-management/shortcodes/) is a great tutorial on using and creating shortcodes.
+{{< gallery >}}
+
+
+
+That is referencing a Hugo shortcode. [Here](https://gohugo.io/content-management/shortcodes/) is a great tutorial on using and creating shortcodes.
 
 * One thing to note is that shortcodes are written in html. You can't create an html document with the `New Post` function in Blogdown (at least I haven't figured it out). Instead just use a text editor (e.g. notepad on Windows) and save it as html in the `shortcodes` folder that you will create within the `layouts` folder.
 
 
 
-
-
-
-
-
-
-
-
-
 <br/><br/>
 
+
+### Additional helpful links
+
 * Here is a helpful link on [getting started with Hugo in general](https://gohugo.io/getting-started/)
+
+*[Updating you version of Hugo for blogdown on Netlify](https://maraaverick.rbind.io/2017/10/updating-blogdown-hugo-version-netlify/)
   
+*[Markdown Cheatsheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
 
 
 
 
 
-
-
-
-
-- **Multi-language** - 15+ language packs including English, 中文, and Português
-- **Multi-user** - Each author gets their own profile page
-- **Privacy Pack** - Assists with GDPR
-- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
-- **One-Click Deployment** - No servers. No databases. Only files.
-
-## Color Themes
-
-Academic comes with **day (light) and night (dark) mode** built-in. Click the sun/moon icon in the top right of the [Demo](https://academic-demo.netlify.com/) to see it in action!
-
-Choose a stunning color and font theme for your site. Themes are fully customizable and include:
-
-{{< gallery >}}
-
-## Ecosystem
-
-* **[Academic Admin](https://github.com/sourcethemes/academic-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
-* **[Academic Scripts](https://github.com/sourcethemes/academic-scripts):** Scripts to help migrate content to new versions of Academic
-
-## Install
-
-You can choose from one of the following four methods to install:
-
-* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
-* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
-* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
-* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
-
-Then [personalize and deploy your new site](https://sourcethemes.com/academic/docs/get-started/).
-
-## Updating
-
-[View the Update Guide](https://sourcethemes.com/academic/docs/update/).
-
-Feel free to *star* the project on [Github](https://github.com/gcushen/hugo-academic/) to help keep track of [updates](https://sourcethemes.com/academic/updates).
-
-## License
-
-Copyright 2016-present [George Cushen](https://georgecushen.com).
-
-Released under the [MIT](https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md) license.
-
-{{< figure src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png" lightbox="true" >}}
