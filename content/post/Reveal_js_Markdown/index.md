@@ -7,11 +7,11 @@ draft: false
 featured: true
 gallery_item:
 - album: gallery
-  caption: AllisonHill
-  image: AllisonHill.png
+  caption: fig1
+  image: fig1.png
 - album: gallery
-  caption: shortcode
-  image: shortcode.png
+  caption: fig2
+  image: fig2.png
 
 
 image:
@@ -407,20 +407,14 @@ My current route is to [change the url](https://www.r-bloggers.com/presentations
 
 
 
+<br></br>
 
-**[You can find my CSS here]()**. [Jonathan Gilligan]() created a [CSS]() by modifying the [solarized theme](). I then took [his CSS] and modified it to make it [my own]() (I liked a lot of the [classes](https://bookdown.org/yihui/rmarkdown/custom-css-1.html) he created so I saw no point in reinventing the wheel!
+
+**[You can find my CSS here]()**. [Jonathan Gilligan](https://www.jonathangilligan.org/) created a CSS by modifying the [solarized theme](https://github.com/hakimel/reveal.js/blob/master/css/theme/source/solarized.scss). I then took his CSS and modified it to make it [my own]() (I liked a lot of the [classes](https://bookdown.org/yihui/rmarkdown/custom-css-1.html) he created so I saw no point in reinventing the wheel!)
 
 To copy it and modify my css (or anyone's) and make it your own, click the 'raw' button in GitHub, highlight and copy the document, and paste it into a text editer (e.g. Notepad on Windows). Save it as `.css`. **[There is a much more refined way of doing] this(https://github.com/hakimel/reveal.js/blob/master/css/theme/README.md) using Gruntfile** I figured it was easy enough to just modify someone else's already wonderfully executed css file.
 
 
-<br/><br/>
-
-
-[Reveal.js documentation on creating your own css](https://github.com/hakimel/reveal.js/blob/master/css/theme/README.md)
-
-
-
-{{< gallery >}}
 
 
 
