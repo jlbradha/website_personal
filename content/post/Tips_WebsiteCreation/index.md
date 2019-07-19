@@ -41,8 +41,9 @@ title: 'Creating a website with Blogdown/Hugo'
 # *A bit of background...*
 I'm not an expert in R, html, or [insert any other language], but I *am* really good at Googling things... so that's where I started when creating my website. There are a lot of really helpful resources out there (see [here](https://bookdown.org/yihui/blogdown/get-started.html), and [here](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/)) for getting started with website creation using Blogdown and Hugo. However, despite these amazing tutorials, I still had to deploy expert Googling skills to work through a few snags. This post is not meant to replicate the wonderful tutorials others have already created. Rather, it's meant to just slightly expand some explanations for those of us who need a bit more detail. 
 
-*Disclaimer*: The words written here are just reflective of my own experience. Your experience may be quite different, but my hope was to try and bring to light a few of the hurdles I faced and the work arounds I found. I use Github and deployed with Netlify so that's what the below 'tips' reflect. It's also a working document so pictures and a more aesthetically pleasing layout to come soon. No judgement.
+*Disclaimer*: The words written here are just reflective of my own experience. Your experience may be quite different, but my hope was to try and bring to light a few of the hurdles I faced and the work arounds I found. I used [GitHub](www.github.com) and deployed with [Netlify](Netlify.com) so that's what the below 'tips' reflect. It's also a working document so pictures and a more aesthetically pleasing layout to come soon. No judgement.
 
+* I will create another post on how I made my course websites. Similar process (Hugo/Blogdown) but a different theme and thus a slightly different approach.
 
 
 # Getting Started
@@ -86,7 +87,7 @@ Next, start with [Alison's](https://alison.rbind.io/) very well-written [tutoria
 * After you create your Github repo (aka after you complete numbers 1-3 on Alison's website), you can clone it via RStudio instead of with terminal (so this is an alternative way to #4 on her tutorial). Go into RStudio and do the following:
 
 ``` 
-Project --> Version Control --> Git --> [enter your repository URL]
+Project --> Version Control --> Git --> *enter your repository URL*
 ```
 
 <sub> *Go to your Github repository and click the "clone or download" button to copy the URL </sub>
@@ -143,19 +144,25 @@ So... Netlify will only be able to deploy your site if the version of hugo you'r
 1. Push all the changes you've made to Github
 I had a few problems with RStudio crashing when I tried to stage and push things to github so [here is a workaround](https://community.rstudio.com/t/blogdown-unable-to-stage-and-commit/6621/4). In the termial window, type the following: 
 
- * `git commit -A` to stage everything 
+ * `git commit -A`    
  
- * ` git commit -m` [enter your commit message here
+ * ` git commit -m` "*enter your commit message here*"
  
  * `git push origin master`
- 
-Then go to github and make sure it's all there! 
+
 
 To push things individually, you can check the box under `staged` in the Git window of RStudio and commit that way.
 
+ 
+Then go to github and make sure it's all there! 
+
+  * **Note** If you can't get Git to commit, it means you need to listen to that red warning you received `To stop the server, run servr::daemon_stop(1) or restart your R session` when you inilized `serve_site`.  
+  * If neither of those options work, go into your `.git` folder (in your repository folder on your personal computer) and delete the `index` file.
+
+
 2. Go to [Netlify](https://www.netlify.com/) and log in with your github account
 
-3. Click `New site from Git` and choose your Git provider (mine is Github)
+3. Click `New site from Git` and choose your Git provider (mine is GitHub)
 
 4. Select the repository of choice and click `deploy site`
 
@@ -184,7 +191,7 @@ While looking at other people's configuration files on GitHub, you may come acro
 
 That is referencing a Hugo shortcode. [Here](https://gohugo.io/content-management/shortcodes/) is a great tutorial on using shortcodes and [here](https://zealous-sammet-9b702c.netlify.com/post/tips_websitecreation/) is one on writing your own shortcodes.
 
-* One thing to note is that shortcodes are written in html. You can't create an html document with the `New Post` function in Blogdown (at least I haven't figured it out). Instead just use a text editor (e.g. notepad on Windows) and save it as html in the `shortcodes` folder that you will create within the `layouts` folder.
+* One thing to note is that shortcodes are written in html. You can't create an html document with the `New Post` function in Blogdown. Instead just use a text editor (e.g. notepad on Windows) and save it as html in the `shortcodes` folder that you will create within the `layouts` folder. Below the `File name` bar, make sure you change `Save as type` from `*.txt` to `All Files (*.*)` so your file doesn't have a  `.txt` ending. 
 
 
 
@@ -194,23 +201,25 @@ That is referencing a Hugo shortcode. [Here](https://gohugo.io/content-managemen
 ### Additional helpful links
 <sub> *I'm basically using this section so I can easily get back to links I often need* </sub>
 
-*Here is a helpful link on [getting started with Hugo in general](https://gohugo.io/getting-started/)
+* Here is a helpful link on [getting started with Hugo in general](https://gohugo.io/getting-started/)
 
-*[Updating you version of Hugo for blogdown on Netlify](https://maraaverick.rbind.io/2017/10/updating-blogdown-hugo-version-netlify/)
+* [Updating you version of Hugo for blogdown on Netlify](https://maraaverick.rbind.io/2017/10/updating-blogdown-hugo-version-netlify/)
   
-*[Markdown Cheatsheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
+* [Markdown Cheatsheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
 
-*[Git ignores directories with no contents](https://stackoverflow.com/questions/3030230/does-git-ignore-empty-folders) so don't panic if it shows up gray in your git repository
+* [Git ignores directories with no contents](https://stackoverflow.com/questions/3030230/does-git-ignore-empty-folders) so don't panic if it shows up gray in your git repository
 
-*[One more tutorial that might be helpful](https://notes.peter-baumgartner.net/slide/)
+* [One more tutorial that might be helpful](https://notes.peter-baumgartner.net/slide/)
 
-*[Inserting an image into your post](https://discourse.gohugo.io/t/solved-how-to-insert-image-in-my-post/1473)
+* [Inserting an image into your post](https://discourse.gohugo.io/t/solved-how-to-insert-image-in-my-post/1473)
 
-*[My layouts folder disappeared](https://stackoverflow.com/questions/51253614/home-layout-missing-in-layouts-folder-but-works)
+* [My layouts folder disappeared](https://stackoverflow.com/questions/51253614/home-layout-missing-in-layouts-folder-but-works)
 
-*[Relative links](https://github.blog/2013-01-31-relative-links-in-markup-files/)
+* [Relative links](https://github.blog/2013-01-31-relative-links-in-markup-files/)
 
-*[Markdown extended syntax](https://www.markdownguide.org/extended-syntax/)
+* [Markdown extended syntax](https://www.markdownguide.org/extended-syntax/)
+
+* [Changing icons on your webpage](https://material.io/tools/icons/?icon=help&style=baseline)
 
 
 

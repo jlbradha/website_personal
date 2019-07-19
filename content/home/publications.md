@@ -80,6 +80,8 @@ subtitle = ""
 
 
 ### In preparation 
+* Jorge, M., Bradham, J., Oshima, J., Ribeiro, M., and Keuroghlian, A. *in prep*. Well-connected patches of forest still needed for a highly mobile social ungulate in Neotropical agricultural lands. *To be subitted to the Brazilian Journal of Nature Conservation*. 
+
 
 * Bradham, J., Yip, C., Jorge, M., Gilligan, J., Oshima, J., Keuroghlian, A., and Ribeiro, M. *in prep*. Linking individual-based modeling and high-resolution animal movement data to evaluate habitat use in fragmented ecosystems: a case study in central Brazil. *To be submitted to Landscape Ecology.*
 
