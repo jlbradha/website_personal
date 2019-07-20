@@ -3,7 +3,7 @@ baseurl = "/"
 copyright = "&copy; 2019 Jennifer Leigh Bradham"
 theme = "hugo-academic"
 
-#googleAnalytics = ""
+googleAnalytics = "UA-144224912-1"
 #disqusShortname = ""
 
 defaultContentLanguage = "en"

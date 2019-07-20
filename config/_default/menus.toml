@@ -24,7 +24,7 @@
   weight = 4
 
 [[main]]
-name = "Posts/Resources"
+name = "Posts"
 url = "/#posts"
 weight = 5
 

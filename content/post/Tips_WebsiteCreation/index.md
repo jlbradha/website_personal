@@ -7,9 +7,6 @@ draft: false
 featured: true
 gallery_item:
 - album: gallery
-  caption: AllisonHill
-  image: AllisonHill.png
-- album: gallery
   caption: shortcode
   image: shortcode.png
 - album: gallery
