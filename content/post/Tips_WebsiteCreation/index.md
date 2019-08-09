@@ -143,7 +143,7 @@ I had a few problems with RStudio crashing when I tried to stage and push things
 
  * `git add -A`    
  
- * ` git commit -m` "*enter your commit message here*"
+ * `git commit -m` "*enter your commit message here*"
  
  * `git push origin master`
 
@@ -189,7 +189,8 @@ Netlify automatically gives you a webite name (mine was something like zealous-a
 
 3. In the left navigation panel, click `DNS`
 
-4. Scroll down to `Custom resource records`. Here you will create two entries.
+4. Scroll down to `Custom resource records`. Here you will create two entries. This is all in the [Netlify custom-domains manual](https://www.netlify.com/docs/custom-domains/#manual), under the heaing "Manual DNS Configuratiion for Root and WWW Custom Domains". 
+
 
 ```
 Name      Type        TTL     Data
@@ -197,7 +198,7 @@ Name      Type        TTL     Data
 
 ```
 
-and the second entry is:
+<small> and the second entry is: </small>
 
 ```
 Name      Type        TTL     Data
@@ -205,7 +206,7 @@ www       CNAME       1H      yournetlifysitename.netlify.com
 
 ```
 
-This is all in the [Netlify custom-domains manual](https://www.netlify.com/docs/custom-domains/#manual), under the heaing "Manual DNS Configuratiion for Root and WWW Custom Domains". 
+
 
 5. Go back to Netlify, select the `Domain management tab` then click the link next your custom domain. The link will say something like "verify with Netlify". Click that link and follow the instructions. Netlify will then instruct you to enter the custom name servers. 
 
