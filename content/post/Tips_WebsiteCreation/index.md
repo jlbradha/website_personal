@@ -141,7 +141,7 @@ So... Netlify will only be able to deploy your site if the version of hugo you'r
 1. Push all the changes you've made to Github
 I had a few problems with RStudio crashing when I tried to stage and push things to github so [here is a workaround](https://community.rstudio.com/t/blogdown-unable-to-stage-and-commit/6621/4). In the termial window, type the following: 
 
- * `git commit -A`    
+ * `git add -A`    
  
  * ` git commit -m` "*enter your commit message here*"
  
