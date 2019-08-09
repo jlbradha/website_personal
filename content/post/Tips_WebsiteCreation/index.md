@@ -177,6 +177,47 @@ Then go to github and make sure it's all there!
 <br/><br/>
 
 
+### Using a custom domain name
+
+Netlify automatically gives you a webite name (mine was something like zealous-aardvark). You can change this name to whatever you want (e.g. jenniferbradham.netlify.com). However if you want to use a custom domain name (e.g. jenniferbradham.org), then you have a few more steps to do. I purchased my domain name through [Google Domains](https://domains.google/#/), so that's what I'll be referencing in the steps below.
+
+[Here is the Netlify manual on how to add a custom domain](https://www.netlify.com/docs/custom-domains/). For simplicity's sake, I'll outline the relevant steps below, but the tutorial provides a lot more information.
+
+1. Deploy your site with Netlify (see above)
+
+2. Log in to [Google Domains](https://domains.google/#/), and select the name of your domain (if you just have one domain, then there is only one option). 
+
+3. In the left navigation panel, click `DNS`
+
+4. Scroll down to `Custom resource records`. Here you will create two entries.
+
+```
+Name      Type        TTL     Data
+@         A           1H      104.198.14.52
+
+```
+
+and the second entry is:
+
+```
+Name      Type        TTL     Data
+www       CNAME       1H      yournetlifysitename.netlify.com
+
+```
+
+This is all in the [Netlify custom-domains manual](https://www.netlify.com/docs/custom-domains/#manual), under the heaing "Manual DNS Configuratiion for Root and WWW Custom Domains". 
+
+5. Go back to Netlify, select the `Domain management tab` then click the link next your custom domain. The link will say something like "verify with Netlify". Click that link and follow the instructions. Netlify will then instruct you to enter the custom name servers. 
+
+ * To do that go back to your Goolge Domains page and look under the `Name servers` selection (again, under the DNS tab).
+
+ * Select `Use custom name server` and enter each of the numbers provided by Netlify as a separate entry. 
+
+
+
+<br/><br/>
+
+
 ### Shortcodes
 
 While looking at other people's configuration files on GitHub, you may come across something that looks like this:
@@ -189,6 +230,13 @@ While looking at other people's configuration files on GitHub, you may come acro
 That is referencing a Hugo shortcode. [Here](https://gohugo.io/content-management/shortcodes/) is a great tutorial on using shortcodes and [here](https://zealous-sammet-9b702c.netlify.com/post/tips_websitecreation/) is one on writing your own shortcodes.
 
 * One thing to note is that shortcodes are written in html. You can't create an html document with the `New Post` function in Blogdown. Instead just use a text editor (e.g. notepad on Windows) and save it as html in the `shortcodes` folder that you will create within the `layouts` folder. Below the `File name` bar, make sure you change `Save as type` from `*.txt` to `All Files (*.*)` so your file doesn't have a  `.txt` ending. 
+
+
+
+
+
+
+
 
 
 
